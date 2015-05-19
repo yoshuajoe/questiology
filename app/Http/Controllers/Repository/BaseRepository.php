@@ -33,7 +33,8 @@ abstract class BaseRepository extends BaseController {
 	    $client->setDefaultOption('headers/Content-Type', 'application/json');
 	    
 	    if($method == 'POST') {
-	    	$response = $client->post($Url, array(), $argument);
+	    	$response = $client->post($Url, ['body' => $argument]);
+	    	echo json_encode($response->json()); die();
 	    }else {
 			$response = $client->send($client->createRequest($method, $Url));
 	    }

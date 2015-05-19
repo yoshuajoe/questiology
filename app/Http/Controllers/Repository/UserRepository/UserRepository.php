@@ -10,7 +10,7 @@ class UserRepository extends BaseRepository implements UserRepositoryInterface {
 
 	public function insert() {
 		$requestURI = 'databases/'.$this->database.'/collections/'.$this->collections;
-		$response = $this->connect($requestURI, json_encode( array('name' => 'joobin')),null, 'POST');
+		$response = $this->connect($requestURI, json_encode( array('name' => 'rangga')),null, 'POST');
 		echo json_encode($response); die();
 	}
 
