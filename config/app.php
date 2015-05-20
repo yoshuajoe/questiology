@@ -13,7 +13,8 @@ return [
 	|
 	*/
 	'BASE_SERVICE_URL' => 'https://api.mongolab.com/api/1/',
-		'SERVICE_SECRET_KEY' => '?apiKey=D2Mg-eO3Rrxavp_IuOjx7BBc-Sxt6_nq',
+	
+	'SERVICE_SECRET_KEY' => 'apiKey=D2Mg-eO3Rrxavp_IuOjx7BBc-Sxt6_nq',
 
 	'debug' => env('APP_DEBUG', true),
 

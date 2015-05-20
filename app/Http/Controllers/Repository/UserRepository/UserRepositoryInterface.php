@@ -3,7 +3,7 @@
 
 interface UserRepositoryInterface {
 
-	public function insert();
+	public function insert($newval);
 
 }
 
